@@ -523,7 +523,21 @@
     <script type="text/javascript" src="assets/js/pdf/rgbcolor.js"></script>
     <script type="text/javascript" src="assets/js/pdf/StackBlur.js"></script> 
     <script type="text/javascript" src="assets/js/pdf/canvg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@1.5.4/src/loadingoverlay.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@1.5.4/extras/loadingoverlay_progress/loadingoverlay_progress.min.js"></script>
+    
+    <script type="text/javascript">
+        $.LoadingOverlaySetup({
+			color           : "rgba(255, 255, 255, 0.97)" ,
+			maxSize         : "50px",
+			imagePosition   : "center center",
+			minSize         : "20px",
+			resizeInterval  : 0,
+			size            : "30%",
+			zIndex          : 1040
+		});
 
+    </script>
     <script>
         $(document).ready(function(){ /*Script*/ })
     </script>

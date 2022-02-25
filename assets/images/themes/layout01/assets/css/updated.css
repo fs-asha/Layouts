@@ -6,6 +6,7 @@ body[data-sidebar-color=primary] .left-side-menu{background-color: var(--primary
 @media (max-width:991.98px){
     body[data-topbar-color=light] .logo-box.r-rounded{border-top-right-radius: 0px;}
 }
+body[data-sidebar-size=condensed] .left-side-menu #sidebar-menu>ul>li:hover>a{color: #b7c7e7;background-color: #10458f;border-top-right-radius: 15px;border-bottom-right-radius: 15px;}
 #sidebar-menu .menuitem-active .active{color: #b7c7e7;background-color: #4d6cae;}
 #sidebar-menu>ul>li>a{color: #b7c7e7;font-size: 0.9rem;font-weight: 100;}
 

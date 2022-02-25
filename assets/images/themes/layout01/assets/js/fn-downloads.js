@@ -1,15 +1,19 @@
-function downloadnow(){
+$(function() {
+    $("body").LoadingOverlay("show", {
+	    fade  : [1000, 700]
+	});
     $("html, body").animate({ scrollTop: 0 }, "slow");
     document.documentElement.style.overflow = 'hidden';  // firefox, chrome
     document.body.scroll = "no"; // ie only
-    // $('.nav-menu').trigger('click');   
+    setTimeout(function() {
+        downloadnow();
+    }, 500);
+});
+
+function downloadnow(){
     setTimeout(function() {
         downloadExport();
     }, 1200);
-
-    // setTimeout(function() {
-    //     document.documentElement.style.overflow = 'auto';        
-    // }, 2200);
 }
 
 function downloadExport()
@@ -69,7 +73,7 @@ function downloadExport()
             }, 7000);         
         } else {
             setTimeout(function() {
-                // $("body").LoadingOverlay("hide");
+                $("body").LoadingOverlay("hide");
                 window.history.back();
             }, 1500);
         }
@@ -80,8 +84,3 @@ function downloadExport()
   
 } //End download
 
-$(function() {
-    setTimeout(function() {
-        downloadnow();
-    }, 500);
-});

@@ -2,7 +2,7 @@ $(function() {
     // var start = moment().subtract(29, 'days');
     // var end = moment();
     var start = moment('01-Jan-2022');
-    var end = moment('15-Feb-2022');
+    var end = moment('14-Feb-2022');
 
     function cb(start, end) {
         $('#reportrange span').html(start.format('DD-MM-YYYY') + ' - to - ' + end.format('DD-MM-YYYY'));
@@ -36,7 +36,7 @@ var instaCMData=[{
 Highcharts.chart('instacmlContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -50,7 +50,10 @@ Highcharts.chart('instacmlContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -94,7 +97,7 @@ Highcharts.chart('instacmlContainer', {
 Highcharts.chart('instacmcContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -108,7 +111,10 @@ Highcharts.chart('instacmcContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -152,7 +158,7 @@ Highcharts.chart('instacmcContainer', {
 Highcharts.chart('instacmsContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -166,7 +172,10 @@ Highcharts.chart('instacmsContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -217,7 +226,7 @@ var fbCMData=[{
 Highcharts.chart('fbcmlContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -231,7 +240,10 @@ Highcharts.chart('fbcmlContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -275,7 +287,7 @@ Highcharts.chart('fbcmlContainer', {
 Highcharts.chart('fbcmcContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -289,7 +301,10 @@ Highcharts.chart('fbcmcContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -333,7 +348,7 @@ Highcharts.chart('fbcmcContainer', {
 Highcharts.chart('fbcmsContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -347,7 +362,10 @@ Highcharts.chart('fbcmsContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -398,7 +416,7 @@ var fbCMOData=[{
 Highcharts.chart('fbcmolContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -412,7 +430,10 @@ Highcharts.chart('fbcmolContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -456,7 +477,7 @@ Highcharts.chart('fbcmolContainer', {
 Highcharts.chart('fbcmocContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -470,7 +491,10 @@ Highcharts.chart('fbcmocContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -514,7 +538,7 @@ Highcharts.chart('fbcmocContainer', {
 Highcharts.chart('fbcmosContainer', {
     chart: {
         type: 'areaspline',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -528,7 +552,10 @@ Highcharts.chart('fbcmosContainer', {
             text: ''
         },
         labels: {
-            rotation: -90
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
     },
     yAxis: {
@@ -578,7 +605,7 @@ var ytCMData=[{
 Highcharts.chart('ytcmContainer', {
     chart: {
         zoomType: 'xy',
-        height:300
+        height:280
     },
     title: {
         text: ''
@@ -635,61 +662,254 @@ Highcharts.chart('ytcmContainer', {
     }
 });
 
-// Twitter smachart
-Highcharts.chart('twsmoContainer', {
+var twCMData=[{
+    "category": ["14-Feb-22", "13-Feb-22", "12-Feb-22", "11-Feb-22", "10-Feb-22", "09-Feb-22", "08-Feb-22", "07-Feb-22", "06-Feb-22", "05-Feb-22", "04-Feb-22", "03-Feb-22", "02-Feb-22", "01-Feb-22", "31-Jan-22", "30-Jan-22", "29-Jan-22", "28-Jan-22", "27-Jan-22", "26-Jan-22", "25-Jan-22", "24-Jan-22", "23-Jan-22", "22-Jan-22", "21-Jan-22", "20-Jan-22", "19-Jan-22", "18-Jan-22", "17-Jan-22", "16-Jan-22", "15-Jan-22", "14-Jan-22", "13-Jan-22", "12-Jan-22", "11-Jan-22", "10-Jan-22", "09-Jan-22", "08-Jan-22", "07-Jan-22", "06-Jan-22", "05-Jan-22", "04-Jan-22", "03-Jan-22", "02-Jan-22", "01-Jan-22"],
+    "retweet": [632, 802, 215, 198, 212, 301, 1990, 257, 471, 618, 556, 496, 701, 931, 222, 557, 627, 237, 303, 1797, 590, 733, 900, 315, 685, 196, 418, 687, 204, 395, 844, 1029, 906, 890, 1662, 1230, 1095, 937, 1065, 313, 4875, 271, 1182, 823, 827],
+    "reply": [397, 717, 166, 155, 338, 311, 925, 206, 230, 516, 513, 497, 575, 623, 150, 437, 522, 176, 293, 935, 370, 439, 627, 220, 444, 120, 536, 467, 146, 236, 478, 488, 532, 444, 597, 792, 577, 372, 597, 177, 1166, 265, 807, 511, 360],
+    "likes": [3598, 4819, 1227, 990, 1187, 1356, 11314, 1356, 2996, 2971, 2973, 2494, 3152, 4003, 930, 2910, 3029, 1548, 1935, 11330, 3610, 3976, 4789, 1924, 4060, 1267, 3062, 4331, 1546, 2380, 6222, 7212, 7002, 4440, 14766, 8575, 7862, 7319, 7521, 2107, 20737, 1872, 8839, 5103, 5872],
+    "quotes": [35, 49, 4, 4, 35, 13, 118, 12, 11, 32, 36, 36, 34, 45, 6, 31, 26, 6, 11, 71, 22, 30, 41, 13, 28, 9, 49, 36, 13, 24, 42, 34, 40, 24, 73, 41, 40, 30, 57, 12, 202, 8, 79, 49, 29]
+}];
+
+// Twitter Likes CM like
+Highcharts.chart('twcmlContainer', {
     chart: {
-        type: 'column',
-        height:300
+        type: 'areaspline',
+        height:280
     },
     title: {
         text: ''
     },
-    xAxis: {
-        categories: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-        crosshair: true
+    legend: {
+        enabled: true
     },
-    yAxis: {
-        min: 0,
+    xAxis: {
+        categories: twCMData[0].category,
         title: {
             text: ''
+        },
+        labels: {
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
         }
+    },
+    yAxis: {
+        crosshair: {
+            width: 2,
+            color: '#999',
+            dashStyle: 'dot'
+        },
+        title: {
+            text: ''
+        },
+        lineWidth: 1,
+          gridLineColor:'#f2f2f2',
     },
     tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.0f}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
+        borderWidth: 0,
+        borderRadius:30,
+        shadow: true,
+        useHTML: true,
     },
     plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
+        areaspline: {
+            fillOpacity: 0.7,
+            pointPlacement: 'on'
         }
     },
-    colors:['#4b9aff', '#ff6060', '#51d29f', '#ffb46e'],
+    colors: ['#fd6851'],
     series: [{
-        name: 'Reply',
-        data: [126, 156, 51, 26, 262, 53, 180, 114, 238, 142, 236, 99]
-
-    }, {
-        name: 'Like',
-        data: [167, 278, 89, 258, 135, 102, 202, 300, 113, 232, 177, 146]
-
-    }, {
-        name: 'Retweet',
-        data: [30, 69, 281, 208, 97, 159, 227, 67, 127, 223, 157, 188]
-
-    // }, {
-    //     name: 'Quote',
-    //     data: [179, 154, 150, 48, 155, 136, 290, 61, 87, 169, 165, 58]
-
+        name: 'Likes',
+        data: twCMData[0].likes
     }],
-    exporting: {
+    credits: {
         enabled: false
     },
-    credits: {
+    exporting: {
         enabled: false
     }
 });
+
+// Twitter Likes CM reply
+Highcharts.chart('twcmrpContainer', {
+    chart: {
+        type: 'areaspline',
+        height:280
+    },
+    title: {
+        text: ''
+    },
+    legend: {
+        enabled: true
+    },
+    xAxis: {
+        categories: twCMData[0].category,
+        title: {
+            text: ''
+        },
+        labels: {
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
+        }
+    },
+    yAxis: {
+        crosshair: {
+            width: 2,
+            color: '#999',
+            dashStyle: 'dot'
+        },
+        title: {
+            text: ''
+        },
+        lineWidth: 1,
+          gridLineColor:'#f2f2f2',
+    },
+    tooltip: {
+        borderWidth: 0,
+        borderRadius:30,
+        shadow: true,
+        useHTML: true,
+    },
+    plotOptions: {
+        areaspline: {
+            fillOpacity: 0.7,
+            pointPlacement: 'on'
+        }
+    },
+    colors: ['#8f99f3'],
+    series: [{
+        name: 'Reply',
+        data: twCMData[0].reply
+    }],
+    credits: {
+        enabled: false
+    },
+    exporting: {
+        enabled: false
+    }
+});
+
+// Twitter Likes CM retweet
+Highcharts.chart('twcmrtContainer', {
+    chart: {
+        type: 'areaspline',
+        height:280
+    },
+    title: {
+        text: ''
+    },
+    legend: {
+        enabled: true
+    },
+    xAxis: {
+        categories: twCMData[0].category,
+        title: {
+            text: ''
+        },
+        labels: {
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
+        }
+    },
+    yAxis: {
+        crosshair: {
+            width: 2,
+            color: '#999',
+            dashStyle: 'dot'
+        },
+        title: {
+            text: ''
+        },
+        lineWidth: 1,
+          gridLineColor:'#f2f2f2',
+    },
+    tooltip: {
+        borderWidth: 0,
+        borderRadius:30,
+        shadow: true,
+        useHTML: true,
+    },
+    plotOptions: {
+        areaspline: {
+            fillOpacity: 0.7,
+            pointPlacement: 'on'
+        }
+    },
+    colors: ['#fdf095'],
+    series: [{
+        name: 'Retweet',
+        data: twCMData[0].retweet
+    }],
+    credits: {
+        enabled: false
+    },
+    exporting: {
+        enabled: false
+    }
+});
+
+// Twitter Likes CM quotes
+// Highcharts.chart('twcmqContainer', {
+//     chart: {
+//         type: 'areaspline',
+//         height:280
+//     },
+//     title: {
+//         text: ''
+//     },
+//     legend: {
+//         enabled: true
+//     },
+//     xAxis: {
+//         categories: fbCMOData[0].category,
+//         title: {
+//             text: ''
+//         },
+//         labels: {
+//             rotation: -90,
+            style: {
+                color: '#222222'
+            }
+//         }
+//     },
+//     yAxis: {
+//         crosshair: {
+//             width: 2,
+//             color: '#999',
+//             dashStyle: 'dot'
+//         },
+//         title: {
+//             text: ''
+//         },
+//         lineWidth: 1,
+//           gridLineColor:'#f2f2f2',
+//     },
+//     tooltip: {
+//         borderWidth: 0,
+//         borderRadius:30,
+//         shadow: true,
+//         useHTML: true,
+//     },
+//     plotOptions: {
+//         areaspline: {
+//             fillOpacity: 0.7,
+//             pointPlacement: 'on'
+//         }
+//     },
+//     colors: ['#fdf095'],
+//     series: [{
+//         name: 'Share',
+//         data: fbCMOData[0].shares
+//     }],
+//     credits: {
+//         enabled: false
+//     },
+//     exporting: {
+//         enabled: false
+//     }
+// });

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- plugins -->
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+
+    <!-- third party css -->
+    <link href="assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+
+    <link href="assets/css/updated.css" rel="stylesheet" type="text/css" />
+
+    <!-- icons -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="loading" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "primary", "size": "condensed", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Topbar Start -->
+        <!-- Removed -->
+        <!-- end Topbar -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <!-- Removed -->
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="mt-1">
+            <div class="content">
+                <style>
+                    .card-facebook{background: #4d6cae;}
+                    .card-instagram{background: #285AEB;}
+                    .card-youtube{background:#c4302b ;}
+                    .card-twitter{background: #1da1f2;}
+                </style>
+                <!-- Start Content-->
+                <div class="container m-0 ms-1" id="print-area">
+                    
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12 ps-3 pt-2">
+                            <div class="page-title-box">
+                                <h4 class="page-title"><i class="uil uil-calender"></i>&nbsp;Daterange: 01-01-2022 - to - 14-02-2022</h4>                                
+                            </div>
+                        </div>
+                    </div>     
+                    <!-- end page title -->
+                    
+                    <div id="fpage" style="min-height:1450px;max-height:1450px;margin-bottom:50px;overflow:hidden;padding-left:15px;padding-right:3px;">
+                        <!-- Filters -->
+                        
+                        <!-- row -->
+
+                        <!-- Facebook CM -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header card-social card-facebook py-1 px-2">
+                                        <h4>
+                                            <span class="text">Facebook CM</span> <i class="uil uil-facebook-f"></i>
+                                        </h4>                                    
+                                    </div>
+                                    <div class="card-body p-2 py-0">
+                                        <div class="d-flex justify-content-between mb-3 border-bottom border-danger px-2">
+                                            <div class="postTotal">
+                                                <h5 class="text-muted fs-14">Total Post</h5>
+                                                <h4>136 <br><small>(Max: 8 / Avg: 3)</small></h4>
+                                            </div>
+                                            <div class="postLikes">
+                                                <h5 class="text-muted fs-14">Total Likes</h5>
+                                                <h4>2,28,996 <br><small>(Max: 16520 / Avg: 5088)</small></h4>
+                                            </div>
+                                            <div class="postComment">
+                                                <h5 class="text-muted fs-14">Total Comments</h5>
+                                                <h4>31710 <br><small>(Max: 5803 / Avg: 704)</small></h4>
+                                            </div>
+                                            <div class="postShare">
+                                                <h5 class="text-muted fs-14">Total Share</h5>
+                                                <h4>11169 <br><small>(Max: 1414 / Avg: 248)</small></h4>
+                                            </div>
+                                            <div class="postActive">
+                                                <h5 class="text-muted fs-14">Avg. Post Life</h5>
+                                                <h4>~6 hrs <br><small>(Max: 7 days)</small></h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 p-0">
+                                                <div id="fbcmlContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <div id="fbcmcContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <div id="fbcmsContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 my-2">
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <table class="table card-table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th colspan="2">Post Type</td>                                                                
+                                                                </tr> 
+                                                            <tr>
+                                                                <td>CM view/opinions</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">72</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Days special</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">47</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Events</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">9</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Policy announcement</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">7</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Others</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">1</span> </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+
+                        <!-- Bar Chart / Facebook CMO -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header card-social card-facebook py-1 px-2">
+                                        <h4>
+                                            <span class="text">Facebook CMO</span> <i class="uil uil-facebook-f"></i>
+                                        </h4>                                    
+                                    </div>
+                                    <div class="card-body p-2 py-0">
+                                        <div class="d-flex justify-content-between mb-3 border-bottom border-danger px-2">
+                                            <div class="postTotal">
+                                                <h5 class="text-muted fs-14">Total Post</h5>
+                                                <h4>244 <br><small>(Max: 12 / Avg: 5)</small></h4>
+                                            </div>
+                                            <div class="postLikes">
+                                                <h5 class="text-muted fs-14">Total Likes</h5>
+                                                <h4>97579 <br><small>(Max: 6131 / Avg: 2168)</small></h4>
+                                            </div>
+                                            <div class="postComment">
+                                                <h5 class="text-muted fs-14">Total Comments</h5>
+                                                <h4>7427 <br><small>(Max: 1032 / Avg: 165)</small></h4>
+                                            </div>
+                                            <div class="postShare">
+                                                <h5 class="text-muted fs-14">Total Share</h5>
+                                                <h4>4063 <br><small>(Max: 232 / Avg: 90)</small></h4>
+                                            </div>
+                                            <div class="postActive">
+                                                <h5 class="text-muted fs-14">Avg. Post Life</h5>
+                                                <h4>~11 hrs <br><small>(Max: 4 days)</small></h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 p-0">
+                                                <div id="fbcmolContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <div id="fbcmocContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <div id="fbcmosContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 my-2">
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <table class="table card-table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th colspan="2">Post Type</td>                                                                
+                                                                </tr> 
+                                                            <tr>
+                                                                <td>CM view/opinions</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">127</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Days special</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">17</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Events</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">44</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Policy announcement</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">56</span> </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+
+                        <!-- Instagram CM -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header card-social card-instagram py-1 px-2">
+                                        <h4>
+                                            <span class="text">Instagram CM</span> <i class="uil uil-instagram" data-feather="instagram"></i>
+                                        </h4>                                    
+                                    </div>
+                                    <div class="card-body p-2 py-0">
+                                        <div class="d-flex justify-content-between mb-3 border-bottom border-danger px-2">
+                                            <div class="postTotal">
+                                                <h5 class="text-muted fs-14">Total Post</h5>
+                                                <h4>102 <br><small>(Max: 8 / Avg: 2)</small></h4>
+                                            </div>
+                                            <div class="postLikes">
+                                                <h5 class="text-muted fs-14">Total Likes</h5>
+                                                <h4>59727 <br><small>(Max: 5440 / Avg: 1327)</small></h4>
+                                            </div>
+                                            <div class="postComment">
+                                                <h5 class="text-muted fs-14">Total Comments</h5>
+                                                <h4>1606 <br><small>(Max: 177 / Avg: 35)</small></h4>
+                                            </div>
+                                            <div class="postShare">
+                                                <h5 class="text-muted fs-14">Total Share</h5>
+                                                <h4>0 <br><small>(Max: 0 / Avg: 0)</small></h4>
+                                            </div>
+                                            <div class="postActive">
+                                                <h5 class="text-muted fs-14">Avg. Post Life</h5>
+                                                <h4>~12 hrs <br><small>(Max: 7 days)</small></h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 p-0">
+                                                <div id="instacmlContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <div id="instacmcContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <div id="instacmsContainer"></div>
+                                            </div>
+                                            <div class="col-lg-3 my-2">
+                                                <div class="card">
+                                                    <div class="card-body p-0">
+                                                        <table class="table card-table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th colspan="2">Post Type</td>                                                                
+                                                                </tr> 
+                                                            <tr>
+                                                                <td>CM view/opinions</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">37</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Days special</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">30</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Events</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">26</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Policy announcement</td>
+                                                                <td class="text-right"> <span class="badge bg-danger">9</span> </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Youtube CM -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header card-social card-youtube py-1 px-2">
+                                    <h4>
+                                        <span class="text">Youtube CM</span> <i class="uil uil-youtube"></i>
+                                    </h4>                                    
+                                </div>
+                                <div class="card-body p-2 py-0">
+                                    <div class="d-flex justify-content-between mb-3 border-bottom border-danger px-2">
+                                        <div class="postTotal">
+                                            <h5 class="text-muted fs-14">Total Post</h5>
+                                            <h4>45 <br><small>(Max: 5 / Avg: 1)</small></h4>
+                                        </div>
+                                        <div class="postViews">
+                                            <h5 class="text-muted fs-14">Total Views</h5>
+                                            <h4>23875 <br><small>(Max: 5334 / Avg: 530)</small></h4>
+                                        </div>
+                                        <div class="postLikes">
+                                            <h5 class="text-muted fs-14">Total Likes</h5>
+                                            <h4>1690 <br><small>(Max: 524 / Avg: 37)</small></h4>
+                                        </div>                                        
+                                        <div class="postActive">
+                                            <h5 class="text-muted fs-14">Avg. Post Life</h5>
+                                            <h4>-- <br><small>(Max: --)</small></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-9">
+                                            <div id="ytcmContainer"></div>
+                                        </div>
+                                        <div class="col-lg-3 my-2">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <table class="table card-table table-sm mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th colspan="2">Post Type</td>                                                                
+                                                            </tr>
+                                                           <tr>
+                                                              <td>CM view/opinions</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">27</span> </td>
+                                                           </tr>
+                                                           <tr>
+                                                              <td>Days special</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">5</span> </td>
+                                                           </tr>
+                                                           <tr>
+                                                              <td>Events</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">8</span> </td>
+                                                           </tr>
+                                                           <tr>
+                                                              <td>Policy announcement</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">5</span> </td>
+                                                           </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <!-- Twitter CM -->
+                    <div class="row mb-3">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header card-social card-twitter py-1 px-2">
+                                    <h4>
+                                        <span class="text">Twitter CM</span> <i class="uil uil-twitter"></i>
+                                    </h4>                                    
+                                </div>
+                                <div class="card-body p-2 py-0">
+                                    <div class="d-flex justify-content-between mb-3 border-bottom border-info px-2">
+                                        <div class="postTotal">
+                                            <h5 class="text-muted fs-14">Total Tweets</h5>
+                                            <h4>226 <br><small>(Max: 14 / Avg: 5)</small></h4>
+                                        </div>
+                                        <div class="postLikes">
+                                            <h5 class="text-muted fs-14">Total Likes</h5>
+                                            <h4>2,12,512 <br><small>(Max: 20737 / Avg: 4722)</small></h4>
+                                        </div>
+                                        <div class="postComment">
+                                            <h5 class="text-muted fs-14">Total Reply</h5>
+                                            <h4>20450 <br><small>(Max: 1166 / Avg: 454)</small></h4>
+                                        </div>
+                                        <div class="postShare">
+                                            <h5 class="text-muted fs-14">Total Retweet</h5>
+                                            <h4>35195 <br><small>(Max: 4875 / Avg: 782)</small></h4>
+                                        </div>
+                                        <div class="postQuote">
+                                            <h5 class="text-muted fs-14">Total Quote</h5>
+                                            <h4>1640 <br><small>(Max: 202 / Avg: 36)</small></h4>
+                                        </div>
+                                        <div class="postActive">
+                                            <h5 class="text-muted fs-14">Avg. Post Life</h5>
+                                            <h4>-- <br><small>(Max: --)</small></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 p-0">
+                                            <div id="twcmlContainer"></div>
+                                        </div>
+                                        <div class="col-lg-3 p-0">
+                                            <div id="twcmrpContainer"></div>
+                                        </div>
+                                        <div class="col-lg-3 p-0">
+                                            <div id="twcmrtContainer"></div>
+                                        </div>
+                                        <div class="col-lg-3 my-2">
+                                            <div class="card">
+                                                <div class="card-body p-0">
+                                                    <table class="table card-table table-sm mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th colspan="2">Post Type</td>                                                                
+                                                            </tr> 
+                                                           <tr>
+                                                              <td>CM view/opinions</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">141</span> </td>
+                                                           </tr>
+                                                           <tr>
+                                                              <td>Days special</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">63</span> </td>
+                                                           </tr>
+                                                           <tr>
+                                                              <td>Events</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">11</span> </td>
+                                                           </tr>
+                                                           <tr>
+                                                              <td>Policy announcement</td>
+                                                              <td class="text-right"> <span class="badge bg-danger">11</span> </td>
+                                                           </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                    <!-- end row -->
+                    
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+            <!-- Footer Start -->
+            
+            <!-- end Footer -->
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- ============================================================== -->
+    <!-- Modal Boxes -->
+    <!-- ============================================================== -->
+    <!-- History -->
+    <div class="modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="newModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" role="document" style="max-width:750px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="">Modal Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Data -->
+              <p>Add text/content here</p>
+              <!-- End: Data --> 
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- optional plugins -->
+    <script src="assets/libs/moment/min/moment.min.js"></script>
+
+    <!-- third party js -->
+    <script src="assets/libs/daterangepicker/daterangepicker.min.js"></script>
+    <!-- third party js ends -->
+
+    <!-- Highcharts -->
+    <script src="assets/libs/highcharts/highcharts.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/dashboardv1.js"></script>
+    <script src="assets/js/fn-downloads.js"></script>
+    <!-- For PDF -->
+    <script type="text/javascript" src="assets/js/pdf/jspdf.min.js"></script>
+    <script type="text/javascript" src="assets/js/pdf/html2canvas.js"></script>
+    <script type="text/javascript" src="assets/js/pdf/html2canvas.svg.js"></script>
+    <script type="text/javascript" src="assets/js/pdf/rgbcolor.js"></script>
+    <script type="text/javascript" src="assets/js/pdf/StackBlur.js"></script> 
+    <script type="text/javascript" src="assets/js/pdf/canvg.js"></script>
+
+    <script>
+        $(document).ready(function(){ /*Script*/ })
+    </script>
+    
+</body>
+</html>

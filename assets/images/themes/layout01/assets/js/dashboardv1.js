@@ -612,7 +612,13 @@ Highcharts.chart('ytcmContainer', {
     },
     xAxis: [{
         categories: ytCMData[0].category,
-        crosshair: true
+        crosshair: true,
+        labels: {
+            rotation: -90,
+            style: {
+                color: '#222222'
+            }
+        }
     }],
     colors:["#008ffb", "#f89c5e"],
     yAxis: [{ // Primary yAxis
